@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personaliza tu Camiseta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <input type="text" id="titulo" placeholder="Escribe un título">
+        <label for="moverX">Mover Título en X</label>
+        <input type="range" id="moverX" min="0" max="10">
+        <label for="moverY">Mover Título en Y</label>
+        <input type="range" id="moverY" min="0" max="10">
+        
+        <div>
+            <label><input type="radio" name="color" value="black" checked> Negro</label>
+            <label><input type="radio" name="color" value="white"> Blanco</label>
+        </div>
+
+        <div class="personajes">
+            <!-- Asegúrate de que las imágenes estén en la carpeta adecuada -->
+            <img src="img/personajes/personaje1.png" class="personajes" data-nombre="William Dunbar">
+            <img src="img/personajes/personaje2.png" class="personajes" data-nombre="Odd Della Robbia">
+            <img src="img/personajes/personaje3.png" class="personajes" data-nombre="Aelita">
+        </div>
+    </div>
+
+    <div class="camiseta-container">
+        <img id="camiseta" src="img/camiseta/black.png" alt="Camiseta">
+        <div id="tituloCamiseta"></div>
+        <div id="personajeGrande"></div>
+        <div id="nombrePersonaje"></div>
+        <div id="personajePequeño"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
